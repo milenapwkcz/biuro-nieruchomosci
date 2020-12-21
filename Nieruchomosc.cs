@@ -1,6 +1,7 @@
 ﻿using System;
 namespace Projekt
 {
+    //tylko sprawdzam czy dziala
     public class Nieruchomosc
     {
         public enum TypNieruchomosci { mieszkanie, dzialka, dom, lokal, magazyn, obiekt}
