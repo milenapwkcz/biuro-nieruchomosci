@@ -32,6 +32,7 @@ namespace Projekt
         TypTransakcji _typTransakcji; 
         Standard _standard; 
         Rynek _rynek;
+        Klient _wlasciciel;
 
         public Klient Wlasciciel { get => _wlasciciel; set => _wlasciciel = value; }
         public string IdNieruchomosci { get => _idNieruchomosci; }
