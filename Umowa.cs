@@ -35,18 +35,18 @@ namespace Biuro_nieruchomosci
         public Pracownik OpiekunKlienta { get => _opiekunKlienta; set => _opiekunKlienta = value; }
         public double Prowizja { get => _prowizja; set => _prowizja = value; }
         public DateTime DataZawarcia { get => _dataZawarcia; set => _dataZawarcia = value; }
-        public DateTime DataZakonczenia //nie dziala!!!!!
+        public DateTime DataZakonczenia 
         {
             get => _dataZakonczenia;
             set
             {
-                _dataZakonczenia = value;
                 int iledni = (_dataZakonczenia - _dataZawarcia).Days;
                 if (iledni>0)
                 {
                     throw new Exception();
                 }
-                
+                _dataZakonczenia = value;
+
             }
         }
     }
